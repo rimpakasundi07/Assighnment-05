@@ -40,15 +40,19 @@
     <section class="flex justify-between items-center">
       <!-- left side -->
       <div class="flex gap-4 items-center">
-        <img src="assets/logo.png" class="lg:ml-10 ml-2 w-15 h-15" alt="" />
-        <p class="text-[#006747] lg:block hidden text-lg font-bold lg:text-2xl">
+        <img
+          src="assets/logo.png"
+          class="lg:block hidden lg:ml-10 ml-2 w-15 h-15"
+          alt=""
+        />
+        <p class="text-[#006747] text-sm font-bold lg:text-2xl">
           Emergency<br />Service
         </p>
       </div>
       <!-- right side  -->
       <div class="flex px-4 gap-6">
         <div class="bg-[#41FF6B1A] flex gap-3 items-center px-4 rounded-2xl">
-          <p class="text-lg">0</p>
+          <p id="heart-count" class="text-lg">0</p>
           <img src="assets/heart.png" class="h-6" alt="" />
         </div>
         <div class="bg-[#41FF6B1A] flex gap-3 items-center px-4 rounded-2xl">
@@ -71,7 +75,7 @@
       <p class="text-white pt-5 text-xl font-bold text-center lg:text-4xl">
         Emergency Service Directory
       </p>
-      <p class="text-white text-lg pt-5 font-bold text-center lg:text-2xl">
+      <p class="text-white text-base pt-5 font-bold text-center lg:text-2xl">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
@@ -91,7 +95,7 @@
                   <img src="assets/police.png" class="w-10 h-10" alt="" />
                 </div>
 
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart hover:text-red-600"></i>
               </div>
               <p class="pt-4 lg:text-xl text-lg font-semibold">
                 Crime Emergency
@@ -371,5 +375,6 @@
         <div class="col-span-6 md:col-span-3 border border-red-500"></div>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
