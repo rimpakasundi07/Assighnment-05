@@ -56,7 +56,7 @@
           <img src="assets/heart.png" class="h-6" alt="" />
         </div>
         <div class="bg-[#41FF6B1A] flex gap-3 items-center px-4 rounded-2xl">
-          <p class="text-lg">100</p>
+          <p id="coin-btn" class="text-lg">100</p>
           <img src="assets/coin.png" class="h-6" alt="" />
         </div>
         <div>
@@ -89,7 +89,7 @@
           <!-- parent of the card -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- 1st card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-blue-50 rounded-2xl">
                   <img src="assets/police.png" class="w-10 h-10" alt="" />
@@ -97,11 +97,11 @@
 
                 <i class="fa-regular fa-heart hover:text-red-600"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="service-name pt-4 lg:text-xl text-lg font-semibold">
                 Crime Emergency
               </p>
               <p>Crime Emergency Service</p>
-              <p>100</p>
+              <p class="service-number">100</p>
               <p class="bg-gray-200 rounded-2xl w-[20%] px-2">Crime</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -109,15 +109,16 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
-                <button></button>
               </div>
             </div>
             <!-- 2nd card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-yellow-50 rounded-2xl">
                   <img src="assets/fire-service.png" class="w-10 h-10" alt="" />
@@ -125,11 +126,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="service-name pt-4 lg:text-xl text-lg font-semibold">
                 Fire Service Number
               </p>
               <p>Fire Service</p>
-              <p>101</p>
+              <p class="service-number">101</p>
               <p class="bg-gray-200 rounded-2xl w-[15%] px-2">Fire</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -137,7 +138,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -146,7 +149,7 @@
 
             <!--3rd card -->
 
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-red-50 rounded-2xl">
                   <img src="assets/ambulance.png" class="w-10 h-10" alt="" />
@@ -154,9 +157,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">Ambulance</p>
+              <p class="pt-4 lg:text-xl text-lg font-semibold service-name">
+                Ambulance
+              </p>
               <p>Medical Emergency Service</p>
-              <p>102</p>
+              <p class="service-number">102</p>
               <p class="bg-gray-200 rounded-2xl w-[35%] px-2">Ambulance</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -164,7 +169,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -173,7 +180,7 @@
             </div>
 
             <!-- 4th card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-blue-50 rounded-2xl">
                   <img
@@ -185,11 +192,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl service-name text-lg font-semibold">
                 National Emergency Number
               </p>
               <p>All-in-One Emergency Service</p>
-              <p>112</p>
+              <p class="service-number">112</p>
               <p class="bg-gray-200 rounded-2xl w-[35%] px-2">Emergency</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -197,7 +204,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -207,7 +216,7 @@
 
             <!-- 5th card -->
 
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-yellow-50 rounded-2xl">
                   <img
@@ -219,11 +228,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl service-name text-lg font-semibold">
                 Women Helpline
               </p>
               <p>Women Helpline Service</p>
-              <p>1091</p>
+              <p class="service-number">1091</p>
               <p class="bg-gray-200 rounded-2xl w-[45%] px-2">Women Helpline</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -231,7 +240,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -240,7 +251,7 @@
             </div>
 
             <!-- 6th card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-red-50 rounded-2xl">
                   <img src="assets/child-help.png" class="w-10 h-10" alt="" />
@@ -248,11 +259,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl service-name text-lg font-semibold">
                 Child Helpline
               </p>
               <p>Child Protection & Safety</p>
-              <p>1098</p>
+              <p class="service-number">1098</p>
               <p class="bg-gray-200 rounded-2xl w-[40%] px-2">Child Helpline</p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -260,7 +271,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -269,7 +282,7 @@
             </div>
 
             <!-- 7th card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-blue-50 rounded-2xl">
                   <img src="assets/hospital.png" class="w-10 h-10" alt="" />
@@ -277,13 +290,13 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl text-lg service-name font-semibold">
                 Ayushman Hospital Helpline
               </p>
               <p>Healthcare / Health Insurance</p>
-              <p>14555</p>
-              <p class="bg-gray-200 rounded-2xl w-[75%] px-2">
-                Ayushman Hospital Helpline
+              <p class="service-number">14555</p>
+              <p class="bg-gray-200 rounded-2xl w-[45%] px-2">
+                Hospital Helpline
               </p>
               <div class="pt-2 flex gap-3">
                 <button class="border w-[50%] border-black rounded-lg">
@@ -291,7 +304,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white call-btn w-[50%] rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -301,7 +316,7 @@
 
             <!--8th card -->
 
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-yellow-50 rounded-2xl">
                   <img
@@ -313,11 +328,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl service-name text-lg font-semibold">
                 Railway Helpline
               </p>
               <p>Railway Helpline Service</p>
-              <p>139</p>
+              <p class="service-number">139</p>
               <p class="bg-gray-200 rounded-2xl w-[45%] px-2">
                 Railway Helpline
               </p>
@@ -327,7 +342,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -336,7 +353,7 @@
             </div>
 
             <!-- 9th card -->
-            <div class="bg-white rounded-2xl p-4">
+            <div class="card bg-white rounded-2xl p-4">
               <div class="flex justify-between items-center">
                 <div class="p-4 bg-red-50 rounded-2xl">
                   <img
@@ -348,11 +365,11 @@
 
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <p class="pt-4 lg:text-xl text-lg font-semibold">
+              <p class="pt-4 lg:text-xl service-name text-lg font-semibold">
                 Mental Health Helpline
               </p>
               <p>Mental Health Support / Counselling</p>
-              <p>1800-599-0019</p>
+              <p class="service-number">1800-599-0019</p>
               <p class="bg-gray-200 rounded-2xl w-[60%] px-2">
                 Mental Health Helpline
               </p>
@@ -362,7 +379,9 @@
                   Copy
                 </button>
 
-                <button class="bg-[#00A63E] text-white w-[50%] rounded-lg">
+                <button
+                  class="bg-[#00A63E] text-white w-[50%] call-btn rounded-lg"
+                >
                   <i class="fa-solid fa-phone text-white"></i>
                   Call
                 </button>
@@ -372,7 +391,21 @@
           </div>
         </div>
         <!--  right -->
-        <div class="col-span-6 md:col-span-3 border border-red-500"></div>
+        <div class="col-span-6 md:col-span-3 rounded-2xl bg-white">
+          <div class="flex justify-between p-4 items-center">
+            <div class="flex gap-2 items-center">
+              <i class="p-2 fa-regular fa-clock"></i>
+              <p class="text-lg font-semibold">Call History</p>
+            </div>
+            <button
+              id="clear-btn"
+              class="text-white py-1 px-4 rounded-2xl bg-[#00A63E]"
+            >
+              Clear
+            </button>
+          </div>
+          <ul id="historyList"></ul>
+        </div>
       </div>
     </section>
     <script src="index.js"></script>
